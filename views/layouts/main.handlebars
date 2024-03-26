@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking in Code</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">eet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titleText">Speak in Code</h1>
+        <nav>            
+            <a href="/">Home</a>
+           {{#if logged_in}}
+                <a href="/dashboard">Dashboard</a>|
+                <button class="button is-danger is-light" id="logout">Logout</button>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
+        </nav>
+
+    </header>
+    {{{ body }}} 
+    <footer>
+      
+    </footer>
+
+
+
+<script link="/js/fonts.js"></script>
+</body>
+</html>

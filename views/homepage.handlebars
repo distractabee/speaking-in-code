@@ -1,0 +1,26 @@
+{{#each posts as |post|}}
+<div class="blog-container">
+  <div class='post-container'>
+      <div id="title-holder">
+        <h2 class='post-title'> 
+          <a href='/post/{{post.id}}'>{{post.title}}</a>
+        </h2>
+
+          <div class='post-info'>
+            <span class='post-author'>Created by {{post.user.username}}</span>           
+            <span class='post-date'>on {{format_date post.date_created}}</span>
+            
+          </div>
+
+        <p class='post-content'>
+          {{post.content}}
+        </p>
+
+      </div>
+  </div>
+</div>
+{{/each}}
+
+{{#if logged_in}}
+{{{ new-post }}}
+{{/if}}
