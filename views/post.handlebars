@@ -12,12 +12,11 @@
   </div>
 
   <!-- Add spacing between the post and the comment form -->
-  <div class='comment-form-container mt-4'>
+  <div class='comment-form-container'>
     <!-- Comment Form -->
     <form id='comment-form'>
       <div class='form-group'>
         <input placeholder='Comment...' class='comment-input' />
-        <!-- {{post.id}} can be used here as needed -->
         <button id='submit-btn' data-post-id={{post.id}}>Comment</button>
         <!-- Add a hidden input to store user_id -->
         <input type='hidden' id='user-id' data-user-id={{user_id}} />
